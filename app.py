@@ -8,7 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 load_dotenv()
 groq_api_key = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
+llm = ChatGroq(api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
 st.set_page_config(page_title="Interview buddy", page_icon="🤖", layout="centered")
 
